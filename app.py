@@ -23,7 +23,7 @@ device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cp
 
 ####### Download ML Models ##########
 
-force_download = True # False
+force_download = False # False
 
 model_name = 'tinybert-sentiment-analysis/'
 local_path = 'ml-models/'+model_name
