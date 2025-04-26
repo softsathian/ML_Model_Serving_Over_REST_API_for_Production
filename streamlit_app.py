@@ -19,14 +19,14 @@ model = st.selectbox("Select Model",
 
 if model=="Sentiment Classifier":
     text = st.text_area("Enter Your Movie Review")
-    user_id = st.text_input("Enter user id", "udemy@kgptalkie.com")
+    user_id = st.text_input("Enter user id", "softsathian@gmail.com")
 
     data = {"text": [text], "user_id": user_id}
     model_api = "sentiment_analysis"
 
 elif model=="Disaster Classifier":
     text = st.text_area("Enter Your Tweet")
-    user_id = st.text_input("Enter user id", "udemy@kgptalkie.com")
+    user_id = st.text_input("Enter user id", "softsathian@gmail.com")
 
     data = {"text": [text], "user_id": user_id}
     model_api = "disaster_classifier"
@@ -48,7 +48,7 @@ elif model=="Pose Classifier":
         url = s3.upload_image_to_s3(file_name)
 
 
-    user_id = st.text_input("Enter user id", "udemy@kgptalkie.com")
+    user_id = st.text_input("Enter user id", "softsathian@gmail.com")
 
     data = {"url": [url], "user_id": user_id}
     model_api = "pose_classifier"
