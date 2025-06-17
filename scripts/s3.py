@@ -1,7 +1,7 @@
 import boto3
 import os
 
-bucket_name = "sathianmlbucket1"
+bucket_name = "kankalbucket"
 s3 = boto3.client('s3')
 
 def download_dir(local_path, model_name):
